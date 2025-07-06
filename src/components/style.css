@@ -1,0 +1,131 @@
+.card {
+    width: max-content;
+    padding: 16px;
+    /*border-radius: 24px;*/
+    /*background: rgba(255, 255, 255, 0.5); !* More transparent for cards *!*/
+    /*backdrop-filter: blur(10px); !* Blur effect *!*/
+    /*border: 1px solid rgba(255, 255, 255, 0.1); !* Subtle border *!*/
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s; /* Smooth hover effect */
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    /*border: 1px solid rgba(209, 213, 219, 0.5);*/
+
+
+    /*box-shadow: rgba(161, 208, 255, 0.48) 6px 2px 16px 0px, rgba(234, 191, 255, 0.6) -6px -2px 16px 0px;*/
+    /*box-shadow: rgba(156, 141, 239, 0.15) 0px 48px 100px 0px;*/
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.16) 0px 30px 60px -30px;
+    /*box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;*/
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card .card-title {
+    font-size: 12px;
+    color: #4a90e2; /* Soft blue for card title */
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.card .card-bottom {
+    font-size: 12px;
+    color: #878999;
+    font-weight: 300;
+}
+
+.card .card-value {
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+    align-items: baseline;
+    line-height: 0.8;
+    margin-top: 4px;
+
+}
+
+.card .card-value-light {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 0.9;
+}
+
+
+
+.table-container {
+
+    padding: 0 1rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container table {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.5);
+
+    /*box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;*/
+    box-shadow: rgba(156, 141, 239, 0.15) 0px 48px 100px 0px;
+    width: 100%;
+    font-size: 12px;
+    border-radius: 20px;
+    /*background: rgba(255, 255, 255, 0.5); !* Glassmorphism effect for the table *!*/
+    /*backdrop-filter: blur(10px); !* Blur effect *!*/
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+.table-container table td {
+    text-align: center;
+    padding: 12px 8px;
+    color: #333; /* Dark text for table */
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+.table-container table thead {
+    background-color: #4a90e2; /* Soft peach header with transparency */
+    color: white; /* Text color for header */
+}
+
+.table-container table tbody tr:active {
+    background-color: rgba(120, 120, 120, 0.1); /* Light gray on hover */
+    color: white; /* Text color for header */
+}
+
+.table-container table thead td {
+    font-weight: 400;
+    color: white; /* White text for header */
+}
+
+.table-container table tbody {
+    background-color: transparent; /* Transparent for glass effect */
+}
+
+.table-container table thead td:first-of-type {
+    border-top-left-radius: 16px;
+}
+
+.table-container table thead td:last-of-type {
+    border-top-right-radius: 16px;
+}
+.table-container table tbody tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 16px;
+}
+
+.table-container table tbody tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 16px;
+}
+
+.blog-card{
+    transition: transform 0.2s; /* Smooth hover effect */
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 1);
+}

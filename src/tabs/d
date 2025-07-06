@@ -1,0 +1,33 @@
+<HStack spacing='4' px={4} mb='4'>
+                <AnalysisCard title='Total Attendance' value={attendanceData["analysis"]['present_classes']}
+                              valueLight={`/${attendanceData["analysis"]['total_classes']}`}  bottom='Classes Attended' />
+                <AnalysisCard title={'Present Percentage'} value={attendanceData["analysis"]['present_percentage'].toFixed(2)}
+                              valueLight={'%'} bottom={`${attendanceData.days[0].replace('-', ' ').substring(0, 6)} - ${attendanceData.days.at(-1).replace('-', ' ').substring(0, 6)}`} />
+            </HStack>
+            <HStack spacing='4' px={4} mb='4'>
+                <AnalysisCard title='Percentile' value={attendanceData["analysis"]['percentile'].toFixed(2)} valueLight='%' bottom='Among your peers' />
+                <AnalysisCard title='Current Streak' value={attendanceData["analysis"]['current_streak']} valueLight='&nbsp;Days'
+                              bottom={`Highest ${attendanceData["analysis"]['longest_streak']} days`} />
+            </HStack>
+
+            <Box className='table-container'>
+                <table className='attendance-table'>
+                    <thead>
+                    <tr>
+                        <td>Class Code</td>
+                        <td>Total Class</td>
+                        <td>Present</td>
+                        <td>Present (%)</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {attendanceData.courses.map((course) => (<tr>
+                        <td>{course}</td>
+                        <td>{attendanceData.courses[course].total}</td>
+                        <td>{attendanceData.courses[course].present}</td>
+                        <td>{attendanceData.courses[course].presentPercent}</td>
+                    </tr>))}
+                </tbody>
+            </table>
+
+        </Box>
