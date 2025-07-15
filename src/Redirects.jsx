@@ -20,6 +20,7 @@ export default function Redirects() {
     // const auth = {chat_id: chat_id, hash_str: hash_str2, data_check_string: data_check_string2}
 
     const [initDataUnsafe, initData] = useInitData();
+    console.log('redirect')
 
     const hash_str = initDataUnsafe.hash;
 
