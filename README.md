@@ -1,7 +1,7 @@
 # I/O — Telegram Mini Web App (Frontend)
 
 🚨 **Note:** This app **can only be opened from within Telegram**. It is a [Telegram Mini App](https://core.telegram.org/bots/webapps).  
-👉 **Launch it here:** [Open I/O in Telegram](<YOUR_MINI_APP_LINK_HERE>)
+👉 **Launch it here:** [Open I/O in Telegram](https://t.me/iitka_bot/campusio)
 
 ---
 
