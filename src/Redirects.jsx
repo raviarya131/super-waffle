@@ -22,6 +22,11 @@ export default function Redirects() {
     const [initDataUnsafe, initData] = useInitData();
 
     const hash_str = initDataUnsafe.hash;
+
+    if(!initData.Unsafe.user){
+        console.log('not telegram')
+        return <Login/>
+    }
     const chat_id = initDataUnsafe.user.id
 
     const auth={hash_str:hash_str, chat_id:chat_id, data_check_string:initData}
