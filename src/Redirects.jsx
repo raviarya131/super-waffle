@@ -23,7 +23,7 @@ export default function Redirects() {
 
     const hash_str = initDataUnsafe.hash;
 
-    if(!initData.Unsafe.user){
+    if(!initDataUnsafe.user){
         console.log('not telegram')
         return <Login/>
     }
